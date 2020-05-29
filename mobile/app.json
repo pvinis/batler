@@ -7,7 +7,7 @@
       "android",
       "web"
     ],
-    "version": "1.0.0",
+    "version": "0.1.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -22,7 +22,13 @@
       "**/*"
     ],
     "ios": {
+        "bundleIdentifier": "is.pvin.batler",
+        "buildNumber": "0.1.0",
       "supportsTablet": true
+    },
+    "android": {
+        "package": "is.pvin.batler",
+        "versionCode": 1
     }
   }
 }
