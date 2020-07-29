@@ -9,8 +9,8 @@
   },
   "dependencies": {
     "expo": "37.0.12",
-    "expo-av": "8.1.0",
-    "expo-permissions": "8.1.0",
+    "expo-av": "8.4.0",
+    "expo-permissions": "8.2.0",
     "luxon": "1.24.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
@@ -23,7 +23,7 @@
     "@types/luxon": "1.24.0",
     "@types/react": "16.9.35",
     "@types/react-native": "0.61.23",
-    "babel-preset-expo": "8.1.1",
+    "babel-preset-expo": "8.2.3",
     "typescript": "3.9.3"
   },
   "private": true
