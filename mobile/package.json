@@ -8,9 +8,9 @@
     "eject": "expo eject"
   },
   "dependencies": {
-    "expo": "37.0.12",
+    "expo": "38.0.9",
     "expo-av": "8.1.0",
-    "expo-permissions": "8.1.0",
+    "expo-permissions": "9.1.0",
     "luxon": "1.24.1",
     "react": "16.9.0",
     "react-dom": "16.9.0",
