@@ -2523,14 +2523,13 @@ expo-asset@~8.1.7:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
-expo-av@8.2.1:
-  version "8.2.1"
-  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.2.1.tgz#cab16a5f0766b84a7c2e05e04523cb73a0cd4e9b"
-  integrity sha512-p1W6ta5yFLsyUUB4bH/Bm2gz/KEleYWRYkF7PR3aYXjtTjMX9Ud1gwzEfbMJMKZRSlJydSzy/ieQT8CVatd68A==
+expo-av@8.4.0:
+  version "8.4.0"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.4.0.tgz#84881f89df35361893b55e739a639cd51d3ecf04"
+  integrity sha512-yboOV6hlZTKPjcEb7bxqIPAQIZ5SupaPEWvGv7aVzdoPNhmY4/uEceMQ6Pm8d33r72Zofp5fR1a2Alvg18bVUQ==
   dependencies:
     lodash "^4.17.15"
     nullthrows "^1.1.0"
-    prop-types "15.7.2"
 
 expo-constants@~9.1.1:
   version "9.1.1"
@@ -2590,7 +2589,12 @@ expo-location@~8.2.1:
   dependencies:
     invariant "^2.2.4"
 
-expo-permissions@9.0.1, expo-permissions@~9.0.1:
+expo-permissions@9.1.0:
+  version "9.1.0"
+  resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-9.1.0.tgz#b830a9e8100d5650a874122b432a65ab1dfdf4c1"
+  integrity sha512-nNF8voeRSzMCIJzt27dmpHHm70ZiZh528GJJzHd9qX9aIgrN2j0WsrFI31p7Q8uPUI8HDCBbF7JmvO91GmFrhQ==
+
+expo-permissions@~9.0.1:
   version "9.0.1"
   resolved "https://registry.yarnpkg.com/expo-permissions/-/expo-permissions-9.0.1.tgz#dc10b58654bbe39bbbed5827369942b01b08055e"
   integrity sha512-CosJgy8XQRN/OFG2JTQDcFxz3XTGi27coCMym/hVXWtQfk0z6PwdRG5IXHfLGuSckwIcgmirrwm2+Zc0X3MmNg==
