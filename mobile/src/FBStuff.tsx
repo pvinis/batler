@@ -1,64 +1,75 @@
-import React, { useState, useEffect }  from 'react'
-import {Image, Button, View, Text } from 'react-native'
-import * as Facebook from "expo-facebook"
-
-
+import React, {useState, useEffect} from 'react';
+import {Image, Button, View, Text} from 'react-native';
+import {
+  LoginButton,
+  AccessToken,
+  LoginManager,
+  GraphRequest,
+  GraphRequestManager,
+} from 'react-native-fbsdk';
 
 export const FBStuff = () => {
-	const [isLoggedIn , setIsLoggedIn] = useState(false)
-	const [token, setToken] = useState(null)
-	const [userData, setUserData] = useState(null)
+  const [token, setToken] = useState<string | null>(null);
 
-	const fbLogin = async () => {
-		try {
-			await Facebook.initializeAsync()
-			const {
-				type, token: theToken, expires, permissions, declinedPermissions
-			} = await Facebook.logInWithReadPermissionsAsync(
-				{ permissions: ["public_profile", "user_posts"] },
-				)
-			if (type === 'success') {
-				setToken(theToken)
-				console.log({permissions, declinedPermissions, theToken})
-				fetch(`https://graph.facebook.com/me?access_token=${theToken}&fields=id,name`)
-				.then(r => r.json())
-				.then(data => {
-					setUserData(data)
-					setIsLoggedIn(true)
-				})
-				.catch(e => console.log(e))
-			}
-		} catch ({message}){
-			alert(`FB Login Error: ${message}`)
-		}
-	}
+  const fbPerm = async () => {
+    LoginManager.logInWithPermissions(['public_profile', 'user_posts']).then(
+      ({isCancelled, grantedPermissions, declinedPermissions}) => {
+        if (isCancelled) {
+          console.log('cancelled');
+        } else {
+          console.log({grantedPermissions, declinedPermissions});
+        }
+      },
+    );
+  };
 
+  const syncAC = async () => {
+    const postsRequest = new GraphRequest(
+      '/me/feed?fields=name,message,full_picture,link,application,type',
+      {accessToken: token!},
+      (error, result) => {
+        if (error) {
+          console.log({error});
+        } else {
+          console.log({data: result});
+        }
+      },
+    );
+    new GraphRequestManager().addRequest(postsRequest).start();
 
-	const syncAC = async () => {
-		console.log(`https://graph.facebook.com/me/feed?fields=name,message,full_picture,link,application,type&access_token=${token}`)
-		fetch(`https://graph.facebook.com/me/feed?fields=name,message,full_picture,link,application,type&access_token=${token}`)
-		.then(r => r.json())
-		.then(data => {
-			// filter
-			console.log({data})
+    // syncWithLocalPhotos()
+  };
 
-			// syncWithLocalPhotos()
-		})
-		.catch(e => console.log(e))
+  useEffect(() => {
+    AccessToken.getCurrentAccessToken().then((data) => {
+      console.log({token: data?.accessToken.toString()});
+      setToken(data?.accessToken.toString() ?? null);
+    });
+  }, []);
 
-	}
-
-	return (
-		<View >
-			{isLoggedIn ?
-			<>
-			<Text>{userData.name}</Text>
-			<Button title="Sync animal crossing" onPress={syncAC}/>
-			</>
-		:
-			<Button title="Login with Facebook" onPress={fbLogin}/>
-		}
-      </View>
-
-	)
-}
+  return (
+    <View>
+      {token !== null ? (
+        <>
+          <Button title="Ask extra permissions" onPress={fbPerm} />
+          <Button title="Sync animal crossing" onPress={syncAC} />
+        </>
+      ) : (
+        <LoginButton
+          onLoginFinished={(error, result) => {
+            if (error) {
+              console.log({error});
+            } else if (result.isCancelled) {
+              console.log('cancelled');
+            } else {
+              AccessToken.getCurrentAccessToken().then((data) => {
+                console.log({token: data?.accessToken.toString()});
+                setToken(data?.accessToken.toString() ?? null);
+              });
+            }
+          }}
+        />
+      )}
+    </View>
+  );
+};

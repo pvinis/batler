@@ -1,18 +1,16 @@
 import React from 'react';
-import { StyleSheet, Text, View } from 'react-native';
-import {Alarms} from './src/Alarms'
-import { FBStuff } from './src/FBStuff';
+import {StyleSheet, Text, View} from 'react-native';
+// import {Alarms} from './src/Alarms'
+import {FBStuff} from './src/FBStuff';
 
-
-export default function App() {
+export const App = () => {
   return (
     <View style={styles.container}>
       <Text>Open up App.tsx to start working on your app!</Text>
-	  <FBStuff />
-	  {/* <Alarms /> */}
+      <FBStuff />
     </View>
   );
-}
+};
 
 const styles = StyleSheet.create({
   container: {

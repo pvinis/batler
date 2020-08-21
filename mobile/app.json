@@ -1,42 +1,7 @@
 {
-    "expo": {
-        "name": "batler",
-        "slug": "batler",
-        "platforms": [
-            "ios",
-            "android",
-            "web"
-        ],
-        "version": "0.1.0",
-        "orientation": "portrait",
         "icon": "./assets/icon.png",
         "splash": {
             "image": "./assets/splash.png",
-            "resizeMode": "contain",
-            "backgroundColor": "#ffffff"
-        },
-        "updates": {
-            "fallbackToCacheTimeout": 0
-        },
-        "assetBundlePatterns": [
-            "**/*"
-        ],
-        "ios": {
-            "bundleIdentifier": "is.pvin.batler",
-            "buildNumber": "0.1.0",
-            "supportsTablet": true,
-            "infoPlist": {
-                "UIBackgroundModes": [
-                    "audio"
-                ]
-            }
-        },
-        "android": {
-            "package": "is.pvin.batler",
-            "versionCode": 1
-        }
-    },
-    "facebookScheme": "fb657881915085240",
-    "facebookAppId": "657881915085240",
-    "facebookDisplayName": "batler"
+  "name": "batler",
+  "displayName": "batler"
 }
