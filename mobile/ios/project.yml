@@ -77,5 +77,6 @@ targets:
     postBuildScripts:
       - name: Bundle React Native code and images
         script: |
+          . $HOME/.asdf/asdf.sh
           export NODE_BINARY=node
           ../node_modules/react-native/scripts/react-native-xcode.sh

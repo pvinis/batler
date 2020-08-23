@@ -7,18 +7,17 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
-		1A05D9FF24F0023D00BCC776 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = 1A05D9FE24F0023D00BCC776 /* File.swift */; };
 		2FD55F5FC06D602826689A7EC4F6B67F /* libPods-batler.a in Frameworks */ = {isa = PBXBuildFile; fileRef = CAF45E74DF83044184AD84840814F5EF /* libPods-batler.a */; };
 		347E79BFD936EE7A4891D461AFC39828 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 53F54A750D675F29A376D91FC4EA8C6A /* Images.xcassets */; };
+		4D1867B76C8647F064211DC5999DA4F3 /* File.swift in Sources */ = {isa = PBXBuildFile; fileRef = E6B11E2DBA3E7D548AD58FD4CCCF435A /* File.swift */; };
 		9D33A98F360A62B2EC2836B0D7AB2705 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8EDA816181864862A37607819A07C873 /* main.m */; };
 		C3A0EDC7767629482DEE2C5EB193B7EB /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = FB36E71CF9DBBA139200F2D0F36A4E9E /* LaunchScreen.storyboard */; };
 		DD522B48D048D7F4CFC6FC908420FD23 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 85B1CE59A1D1A319E7048C1EA94C2390 /* AppDelegate.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
-		0B897ADAD66E2F0658ACFC1BECED390F /* main.jsbundle */ = {isa = PBXFileReference; lastKnownFileType = file; path = main.jsbundle; sourceTree = "<group>"; };
-		1A05D9FD24F0023C00BCC776 /* batler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "batler-Bridging-Header.h"; sourceTree = "<group>"; };
-		1A05D9FE24F0023D00BCC776 /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
+		0B897ADAD66E2F0658ACFC1BECED390F /* main.jsbundle */ = {isa = PBXFileReference; path = main.jsbundle; sourceTree = "<group>"; };
+		1F82AA2FA16DE367F60272406454E344 /* batler-Bridging-Header.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "batler-Bridging-Header.h"; sourceTree = "<group>"; };
 		53F54A750D675F29A376D91FC4EA8C6A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		58AEA3B95281F2774A907E05E5B00959 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 		600130AA528A98F8E9ED96FF09A586F6 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
@@ -28,7 +27,8 @@
 		8EDA816181864862A37607819A07C873 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
 		9705ED55C04CD89C22AD0D60F2516936 /* Pods-batler.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-batler.debug.xcconfig"; path = "Target Support Files/Pods-batler/Pods-batler.debug.xcconfig"; sourceTree = "<group>"; };
 		CAF45E74DF83044184AD84840814F5EF /* libPods-batler.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-batler.a"; sourceTree = BUILT_PRODUCTS_DIR; };
-		E38CA633405019AEE0F72AF2F3345DFC /* batler.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = batler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E38CA633405019AEE0F72AF2F3345DFC /* batler.app */ = {isa = PBXFileReference; includeInIndex = 0; lastKnownFileType = wrapper.application; path = batler.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		E6B11E2DBA3E7D548AD58FD4CCCF435A /* File.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = File.swift; sourceTree = "<group>"; };
 		FB36E71CF9DBBA139200F2D0F36A4E9E /* LaunchScreen.storyboard */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; path = LaunchScreen.storyboard; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -44,13 +44,27 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
-		344D4B58378FDE8AEA4DD2F794852C5A /* Pods */ = {
+		C5802C04A7A4F596576753BBD3E77B7E /* batler */ = {
 			isa = PBXGroup;
 			children = (
-				9705ED55C04CD89C22AD0D60F2516936 /* Pods-batler.debug.xcconfig */,
-				83D0B44D43A096B7BA564F8B081E4170 /* Pods-batler.release.xcconfig */,
+				600130AA528A98F8E9ED96FF09A586F6 /* AppDelegate.h */,
+				85B1CE59A1D1A319E7048C1EA94C2390 /* AppDelegate.m */,
+				E6B11E2DBA3E7D548AD58FD4CCCF435A /* File.swift */,
+				53F54A750D675F29A376D91FC4EA8C6A /* Images.xcassets */,
+				58AEA3B95281F2774A907E05E5B00959 /* Info.plist */,
+				FB36E71CF9DBBA139200F2D0F36A4E9E /* LaunchScreen.storyboard */,
+				1F82AA2FA16DE367F60272406454E344 /* batler-Bridging-Header.h */,
+				8EDA816181864862A37607819A07C873 /* main.m */,
 			);
-			path = Pods;
+			path = batler;
+			sourceTree = "<group>";
+		};
+		7809DAFEB8024555DA6AD0F358F6DD65 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				E38CA633405019AEE0F72AF2F3345DFC /* batler.app */,
+			);
+			name = Products;
 			sourceTree = "<group>";
 		};
 		4CF9BD86D8952B56593E6E4D3ED0368E = {
@@ -76,27 +90,14 @@
 			name = Frameworks;
 			sourceTree = "<group>";
 		};
-		7809DAFEB8024555DA6AD0F358F6DD65 /* Products */ = {
+		344D4B58378FDE8AEA4DD2F794852C5A /* Pods */ = {
 			isa = PBXGroup;
 			children = (
-				E38CA633405019AEE0F72AF2F3345DFC /* batler.app */,
+				9705ED55C04CD89C22AD0D60F2516936 /* Pods-batler.debug.xcconfig */,
+				83D0B44D43A096B7BA564F8B081E4170 /* Pods-batler.release.xcconfig */,
 			);
-			name = Products;
-			sourceTree = "<group>";
-		};
-		C5802C04A7A4F596576753BBD3E77B7E /* batler */ = {
-			isa = PBXGroup;
-			children = (
-				600130AA528A98F8E9ED96FF09A586F6 /* AppDelegate.h */,
-				85B1CE59A1D1A319E7048C1EA94C2390 /* AppDelegate.m */,
-				1A05D9FE24F0023D00BCC776 /* File.swift */,
-				53F54A750D675F29A376D91FC4EA8C6A /* Images.xcassets */,
-				58AEA3B95281F2774A907E05E5B00959 /* Info.plist */,
-				FB36E71CF9DBBA139200F2D0F36A4E9E /* LaunchScreen.storyboard */,
-				8EDA816181864862A37607819A07C873 /* main.m */,
-				1A05D9FD24F0023C00BCC776 /* batler-Bridging-Header.h */,
-			);
-			path = batler;
+			name = Pods;
+			path = Pods;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -110,7 +111,7 @@
 				E227AE20FFF3451189D3A101EADF545B /* Start Packager */,
 				9A16CE9F8F9618D3A32DF1457D2B6457 /* Sources */,
 				ED51EAD35CC86A4E0D6E57DFCEFD7E01 /* Resources */,
-				5B7CDF4A0CFB4B32DE35E2A5C402C076 /* Bundle React Native code and images */,
+				B704998C561F1143A9F4BA672C937FA6 /* Bundle React Native code and images */,
 				D39E8F0E561A88D64FA9CF4C8B66AE78 /* Frameworks */,
 				6CB4C010527A1DDA10D84F16433C9E27 /* [CP] Copy Pods Resources */,
 			);
@@ -131,9 +132,6 @@
 			attributes = {
 				LastUpgradeCheck = 1020;
 				TargetAttributes = {
-					FD5D7488B5A543DD5E639CD24B2265E7 = {
-						LastSwiftMigration = 1160;
-					};
 				};
 			};
 			buildConfigurationList = 710BB1F13F231F567457E67EA200BF60 /* Build configuration list for PBXProject "batler" */;
@@ -166,24 +164,6 @@
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXShellScriptBuildPhase section */
-		5B7CDF4A0CFB4B32DE35E2A5C402C076 /* Bundle React Native code and images */ = {
-			isa = PBXShellScriptBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-			);
-			inputFileListPaths = (
-			);
-			inputPaths = (
-			);
-			name = "Bundle React Native code and images";
-			outputFileListPaths = (
-			);
-			outputPaths = (
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-			shellPath = /bin/sh;
-			shellScript = "export NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
-		};
 		6CB4C010527A1DDA10D84F16433C9E27 /* [CP] Copy Pods Resources */ = {
 			isa = PBXShellScriptBuildPhase;
 			buildActionMask = 2147483647;
@@ -242,6 +222,24 @@
 			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
 			showEnvVarsInLog = 0;
 		};
+		B704998C561F1143A9F4BA672C937FA6 /* Bundle React Native code and images */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Bundle React Native code and images";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = ". $HOME/.asdf/asdf.sh\nexport NODE_BINARY=node\n../node_modules/react-native/scripts/react-native-xcode.sh\n";
+		};
 /* End PBXShellScriptBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -250,7 +248,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				DD522B48D048D7F4CFC6FC908420FD23 /* AppDelegate.m in Sources */,
-				1A05D9FF24F0023D00BCC776 /* File.swift in Sources */,
+				4D1867B76C8647F064211DC5999DA4F3 /* File.swift in Sources */,
 				9D33A98F360A62B2EC2836B0D7AB2705 /* main.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -258,6 +256,101 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin XCBuildConfiguration section */
+		1AFFE6CF7577130D2284961B69B406AC /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = YES;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					/usr/lib/swift,
+					"$(inherited)",
+				);
+				LIBRARY_SEARCH_PATHS = (
+					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
+					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
+					"$(inherited)",
+				);
+				MTL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_VERSION = 5.0;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		4D3CC3C43DF97034C6E862EBE72912C6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 9705ED55C04CD89C22AD0D60F2516936 /* Pods-batler.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CLANG_ENABLE_MODULES = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				ENABLE_BITCODE = NO;
+				FRAMEWORK_SEARCH_PATHS = (
+					"$(inherited)",
+					"\".\"",
+				);
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"$(inherited)",
+					"FB_SONARKIT_ENABLED=1",
+				);
+				INFOPLIST_FILE = batler/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				OTHER_LDFLAGS = (
+					"$(inherited)",
+					"-ObjC",
+					"-lc++",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = is.pvin.batler;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
 		04D3231FE6B46FD194213DFD0A555C00 /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
@@ -329,105 +422,6 @@
 			};
 			name = Debug;
 		};
-		1AFFE6CF7577130D2284961B69B406AC /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ALWAYS_SEARCH_USER_PATHS = NO;
-				CLANG_ANALYZER_LOCALIZABILITY_NONLOCALIZED = YES;
-				CLANG_ANALYZER_NONNULL = YES;
-				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
-				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
-				CLANG_CXX_LIBRARY = "libc++";
-				CLANG_ENABLE_MODULES = YES;
-				CLANG_ENABLE_OBJC_ARC = YES;
-				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
-				CLANG_WARN_BOOL_CONVERSION = YES;
-				CLANG_WARN_COMMA = YES;
-				CLANG_WARN_CONSTANT_CONVERSION = YES;
-				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
-				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
-				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
-				CLANG_WARN_EMPTY_BODY = YES;
-				CLANG_WARN_ENUM_CONVERSION = YES;
-				CLANG_WARN_INFINITE_RECURSION = YES;
-				CLANG_WARN_INT_CONVERSION = YES;
-				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
-				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
-				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
-				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
-				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
-				CLANG_WARN_STRICT_PROTOTYPES = YES;
-				CLANG_WARN_SUSPICIOUS_MOVE = YES;
-				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
-				CLANG_WARN_UNREACHABLE_CODE = YES;
-				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
-				COPY_PHASE_STRIP = YES;
-				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
-				ENABLE_NS_ASSERTIONS = NO;
-				ENABLE_STRICT_OBJC_MSGSEND = YES;
-				GCC_C_LANGUAGE_STANDARD = gnu99;
-				GCC_NO_COMMON_BLOCKS = YES;
-				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
-				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
-				GCC_WARN_UNDECLARED_SELECTOR = YES;
-				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
-				GCC_WARN_UNUSED_FUNCTION = YES;
-				GCC_WARN_UNUSED_VARIABLE = YES;
-				IPHONEOS_DEPLOYMENT_TARGET = 10.0;
-				LD_RUNPATH_SEARCH_PATHS = (
-					/usr/lib/swift,
-					"$(inherited)",
-				);
-				LIBRARY_SEARCH_PATHS = (
-					"$(TOOLCHAIN_DIR)/usr/lib/swift/$(PLATFORM_NAME)",
-					"$(TOOLCHAIN_DIR)/usr/lib/swift-5.0/$(PLATFORM_NAME)",
-					"$(inherited)",
-				);
-				MTL_ENABLE_DEBUG_INFO = NO;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SDKROOT = iphoneos;
-				SWIFT_COMPILATION_MODE = wholemodule;
-				SWIFT_VERSION = 5.0;
-				VALIDATE_PRODUCT = YES;
-			};
-			name = Release;
-		};
-		4D3CC3C43DF97034C6E862EBE72912C6 /* Debug */ = {
-			isa = XCBuildConfiguration;
-			baseConfigurationReference = 9705ED55C04CD89C22AD0D60F2516936 /* Pods-batler.debug.xcconfig */;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
-				CLANG_ENABLE_MODULES = YES;
-				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = CAG2W9M777;
-				ENABLE_BITCODE = NO;
-				FRAMEWORK_SEARCH_PATHS = (
-					"$(inherited)",
-					"\".\"",
-				);
-				GCC_PREPROCESSOR_DEFINITIONS = (
-					"$(inherited)",
-					"FB_SONARKIT_ENABLED=1",
-				);
-				INFOPLIST_FILE = batler/Info.plist;
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-				);
-				OTHER_LDFLAGS = (
-					"$(inherited)",
-					"-ObjC",
-					"-lc++",
-				);
-				PRODUCT_BUNDLE_IDENTIFIER = is.pvin.batler;
-				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "batler/batler-Bridging-Header.h";
-				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
 		DA5AD4B516341E23854401FD98983215 /* Release */ = {
 			isa = XCBuildConfiguration;
 			baseConfigurationReference = 83D0B44D43A096B7BA564F8B081E4170 /* Pods-batler.release.xcconfig */;
@@ -435,7 +429,6 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "iPhone Developer";
-				DEVELOPMENT_TEAM = CAG2W9M777;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(inherited)",
 					"\".\"",
@@ -452,8 +445,6 @@
 				);
 				PRODUCT_BUNDLE_IDENTIFIER = is.pvin.batler;
 				SDKROOT = iphoneos;
-				SWIFT_OBJC_BRIDGING_HEADER = "batler/batler-Bridging-Header.h";
-				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
 			name = Release;
