@@ -46,6 +46,7 @@ targets:
       parallelizeBuild: false
     settings:
       base:
+        DEVELOPMENT_TEAM: CAG2W9M777
         PRODUCT_BUNDLE_IDENTIFIER: is.pvin.batler
         CLANG_ENABLE_MODULES: true
         OTHER_LDFLAGS:
@@ -77,6 +78,6 @@ targets:
     postBuildScripts:
       - name: Bundle React Native code and images
         script: |
-          . $HOME/.asdf/asdf.sh
+          . $(brew --prefix asdf)/asdf.sh
           export NODE_BINARY=node
           ../node_modules/react-native/scripts/react-native-xcode.sh
