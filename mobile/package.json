@@ -12,7 +12,7 @@
   "dependencies": {
     "luxon": "1.25.0",
     "react": "16.13.1",
-    "react-native": "0.63.2",
+    "react-native": "0.63.3",
     "react-native-fbsdk": "2.0.0"
   },
   "devDependencies": {
