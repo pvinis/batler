@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <Scheme
-   LastUpgradeVersion = "1200"
+   LastUpgradeVersion = "1020"
    version = "1.3">
    <BuildAction
       parallelizeBuildables = "YES"
@@ -14,7 +14,7 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
-               BlueprintIdentifier = "FD5D7488B5A543DD5E639CD24B2265E7"
+               BlueprintIdentifier = "74BD3D54B90B3E8B7764CCB7"
                BuildableName = "batler.app"
                BlueprintName = "batler"
                ReferencedContainer = "container:batler.xcodeproj">
@@ -26,9 +26,21 @@
       buildConfiguration = "Debug"
       selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
       selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      onlyGenerateCoverageForSpecifiedTargets = "NO"
       shouldUseLaunchSchemeArgsEnv = "YES">
       <Testables>
       </Testables>
+      <MacroExpansion>
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "74BD3D54B90B3E8B7764CCB7"
+            BuildableName = "batler.app"
+            BlueprintName = "batler"
+            ReferencedContainer = "container:batler.xcodeproj">
+         </BuildableReference>
+      </MacroExpansion>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </TestAction>
    <LaunchAction
       buildConfiguration = "Debug"
@@ -44,12 +56,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FD5D7488B5A543DD5E639CD24B2265E7"
+            BlueprintIdentifier = "74BD3D54B90B3E8B7764CCB7"
             BuildableName = "batler.app"
             BlueprintName = "batler"
             ReferencedContainer = "container:batler.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
@@ -61,12 +75,14 @@
          runnableDebuggingMode = "0">
          <BuildableReference
             BuildableIdentifier = "primary"
-            BlueprintIdentifier = "FD5D7488B5A543DD5E639CD24B2265E7"
+            BlueprintIdentifier = "74BD3D54B90B3E8B7764CCB7"
             BuildableName = "batler.app"
             BlueprintName = "batler"
             ReferencedContainer = "container:batler.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
+      <CommandLineArguments>
+      </CommandLineArguments>
    </ProfileAction>
    <AnalyzeAction
       buildConfiguration = "Debug">
