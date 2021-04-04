@@ -23,12 +23,12 @@ jobs:
         uses: actions/cache@v2
         with:
           path: "bundler-vendor"
-          key: ${{ runner.os }}-gems-${{ env.cache-name }}-${{ hashFiles('Gemfile.lock') }}-v1
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}-v1
       - name: Cache yarn deps
         uses: actions/cache@v2
         with:
           path: "**/node_modules"
-          key: ${{ runner.os }}-yarndeps-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
+          key: ${{ runner.os }}-yarndeps-${{ hashFiles('**/yarn.lock') }}-v1
       - name: Install gems
         run: bundle install
       - name: Install deps
@@ -37,7 +37,6 @@ jobs:
         run: ./scripts/download-expo-artifact
       - name: Upload to Testflight
         env:
-          FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
           FASTLANE_APPLE_API_KEY_ID: ${{ secrets.FASTLANE_APPLE_API_KEY_ID }}
           FASTLANE_APPLE_API_ISSUER_ID: ${{ secrets.FASTLANE_APPLE_API_ISSUER_ID }}
           FASTLANE_APPLE_API_KEY: ${{ secrets.FASTLANE_APPLE_API_KEY }}

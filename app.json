@@ -18,7 +18,10 @@
     ],
     "ios": {
        "bundleIdentifier": "is.pvin.batler",
-       "buildNumber": "3",
+       "buildNumber": "4",
+       "config":{
+           "usesNonExemptEncryption": false
+       },
       "supportsTablet": true
     },
     "android": {

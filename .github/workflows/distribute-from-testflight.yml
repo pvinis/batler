@@ -6,7 +6,20 @@ jobs:
   publish:
     name: Distribute from Testflight
     runs-on: macos-latest
+
     steps:
       - uses: actions/checkout@v2
-      - name: Upload to Testflight
-        run: bundle e fastlane pilot distribute
+      - name: Cache gems
+        uses: actions/cache@v2
+        with:
+          path: "bundler-vendor"
+          key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}-v1
+      - name: Install gems
+        run: bundle install
+      - name: Distribute from Testflight
+        env:
+          FASTLANE_APPLE_API_KEY_ID: ${{ secrets.FASTLANE_APPLE_API_KEY_ID }}
+          FASTLANE_APPLE_API_ISSUER_ID: ${{ secrets.FASTLANE_APPLE_API_ISSUER_ID }}
+          FASTLANE_APPLE_API_KEY: ${{ secrets.FASTLANE_APPLE_API_KEY }}
+        run: bundle e fastlane distribute
+

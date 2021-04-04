@@ -9,3 +9,14 @@ lane :upload do
     },
   )
 end
+
+lane :distribute do
+  pilot(
+    distribute_only: true,
+    api_key: {
+      key_id: ENV["FASTLANE_APPLE_API_KEY_ID"],
+      issuer_id: ENV["FASTLANE_APPLE_API_ISSUER_ID"],
+      key: ENV["FASTLANE_APPLE_API_KEY"],
+    },
+  )
+end
