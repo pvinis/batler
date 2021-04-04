@@ -10,7 +10,7 @@
     "lint": "eslint ."
   },
   "dependencies": {
-    "luxon": "1.25.0",
+    "luxon": "1.26.0",
     "react": "17.0.1",
     "react-native": "0.63.3",
     "react-native-fbsdk": "3.0.0"
@@ -19,7 +19,7 @@
     "@babel/core": "7.12.9",
     "@babel/runtime": "7.12.5",
     "@react-native-community/eslint-config": "2.0.0",
-    "@types/luxon": "1.25.0",
+    "@types/luxon": "1.26.3",
     "@types/react": "17.0.0",
     "@types/react-native": "0.63.37",
     "@types/react-native-fbsdk": "1.1.1",
