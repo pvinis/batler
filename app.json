@@ -2,7 +2,7 @@
   "expo": {
     "name": "batler",
     "slug": "batler",
-    "version": "1.0.0",
+    "version": "0.3.0",
     "orientation": "portrait",
     "icon": "./assets/icon.png",
     "splash": {
@@ -18,7 +18,7 @@
     ],
     "ios": {
        "bundleIdentifier": "is.pvin.batler",
-       "buildNumber": "0.3.0",
+       "buildNumber": "0.3.0-bla",
       "supportsTablet": true
     },
     "android": {
