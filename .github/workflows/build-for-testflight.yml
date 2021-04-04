@@ -1,13 +1,13 @@
-name: Publish to Expo
+name: Build for Testflight
 
 on:
   push:
-    branches:
-      - master
+    tags:
+      - v*
 
 jobs:
   publish:
-    name: Publish to Expo
+    name: Build for Testflight
     runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
@@ -28,5 +28,5 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
       - name: Install deps
         run: yarn install
-      - name: Publish to Expo
-        run: expo publish
+      - name: Build a Testflight app
+        run: expo build:ios --release-channel=testflight --no-wait --non-interactive
