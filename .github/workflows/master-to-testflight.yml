@@ -37,4 +37,4 @@ jobs:
             # - name: Lint
               # run: yarn lint
             - name: Build a Testflight app
-              run: yarn build:ios --release-channel=testflight
+              run: expo build:ios --release-channel=testflight
