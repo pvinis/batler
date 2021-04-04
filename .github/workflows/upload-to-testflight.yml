@@ -19,11 +19,19 @@ jobs:
           expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
           expo-cache: true
-      - name: Cache
+      - name: Cache gems
+        uses: actions/cache@v2
+        with:
+          path: "bundler-vendor"
+          key: ${{ runner.os }}-gems-${{ env.cache-name }}-${{ hashFiles('Gemfile.lock') }}-v1
+      - name: Cache yarn deps
         uses: actions/cache@v2
         with:
           path: "**/node_modules"
-          key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
+          bundler-vendor
+          key: ${{ runner.os }}-yarndeps-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
+      - name: Install gems
+        run: bundle install
       - name: Install deps
         run: yarn install
       - name: Download artifact

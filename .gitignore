@@ -1,4 +1,5 @@
 node_modules/**/*
+bundler-vendor/
 .expo/*
 npm-debug.*
 *.jks
