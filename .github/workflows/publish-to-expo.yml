@@ -1,12 +1,14 @@
-name: Upload to Testflight
+name: Build for Testflight
 
-on: [workflow_dispatch]
+on:
+  push:
+    tags:
+      - v*
 
 jobs:
   publish:
-    name: Upload to Testflight
-    runs-on: macos-latest
-
+    name: Build for Testflight
+    runs-on: ubuntu-latest
     steps:
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v2
@@ -26,7 +28,5 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
       - name: Install deps
         run: yarn install
-      - name: Download artifact
-        run: ./scripts/download-expo-artifact
-      - name: Upload to Testflight
-        run: bundle e fastlane pilot upload skip_waiting_for_build_processing
+      - name: Build a Testflight app
+        run: expo build:ios --release-channel=testflight --no-wait --non-interactive
