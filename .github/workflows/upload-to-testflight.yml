@@ -1,0 +1,17 @@
+name: Upload to Testflight
+
+on: [workflow_dispatch]
+
+jobs:
+  publish:
+    name: Upload to Testflight
+    runs-on: macos-latest
+
+    #  add cache and install gems
+
+    steps:
+      - uses: actions/checkout@v2
+      - name: Download artifact
+        run: ./script/download-expo-artifact
+      - name: Upload to Testflight
+        run: bundle e fastlane pilot upload skip_waiting_for_build_processing

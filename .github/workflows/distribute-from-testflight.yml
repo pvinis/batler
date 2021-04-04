@@ -1,0 +1,12 @@
+name: Distribute from Testflight
+
+on: [workflow_dispatch]
+
+jobs:
+  publish:
+    name: Distribute from Testflight
+    runs-on: macos-latest
+    steps:
+      - uses: actions/checkout@v2
+      - name: Upload to Testflight
+        run: bundle e fastlane pilot distribute
