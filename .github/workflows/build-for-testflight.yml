@@ -2,8 +2,8 @@ name: Build for Testflight
 
 on:
   push:
-    branches:
-      - master
+    # branches:
+      # - master
     tags:
       - v*
 
