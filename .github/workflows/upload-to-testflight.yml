@@ -38,5 +38,5 @@ jobs:
       - name: Upload to Testflight
         env:
           FASTLANE_USER: ${{ secrets.FASTLANE_USER }}
-          FASTLANE_PASSWORD: ${{ secrets.FASTLANE_PASSWORD }}
+          FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD: ${{ secrets.FASTLANE_APPLE_APPLICATION_SPECIFIC_PASSWORD }}
         run: bundle e fastlane pilot upload --ipa app.ipa --skip_waiting_for_build_processing
