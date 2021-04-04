@@ -18,7 +18,7 @@
     ],
     "ios": {
        "bundleIdentifier": "is.pvin.batler",
-       "buildNumber": "0.3.0-bla",
+       "buildNumber": "2",
       "supportsTablet": true
     },
     "android": {
