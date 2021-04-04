@@ -36,4 +36,4 @@ jobs:
       - name: Download artifact
         run: ./scripts/download-expo-artifact
       - name: Upload to Testflight
-        run: bundle e fastlane pilot upload skip_waiting_for_build_processing
+        run: bundle e fastlane pilot upload --ipa app.ipa --skip_waiting_for_build_processing
