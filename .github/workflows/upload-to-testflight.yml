@@ -9,31 +9,32 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
-      - uses: actions/setup-node@v2
-        with:
-          node-version: '14'
-      - name: Setup expo
-        uses: expo/expo-github-action@v5
-        with:
-          expo-version: 4.x
-          expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
-          expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
-          expo-cache: true
-      - name: Cache gems
-        uses: actions/cache@v2
-        with:
-          path: "bundler-vendor"
-          key: ${{ runner.os }}-gems-${{ env.cache-name }}-${{ hashFiles('Gemfile.lock') }}-v1
-      - name: Cache yarn deps
-        uses: actions/cache@v2
-        with:
-          path: "**/node_modules"
-          key: ${{ runner.os }}-yarndeps-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
-      - name: Install gems
-        run: bundle install
-      - name: Install deps
-        run: yarn install
-      - name: Download artifact
-        run: ./scripts/download-expo-artifact
+      # - uses: actions/setup-node@v2
+      #   with:
+      #     node-version: '14'
+      # - name: Setup expo
+      #   uses: expo/expo-github-action@v5
+      #   with:
+      #     expo-version: 4.x
+      #     expo-username: ${{ secrets.EXPO_CLI_USERNAME }}
+      #     expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
+      #     expo-cache: true
+      # - name: Cache gems
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: "bundler-vendor"
+      #     key: ${{ runner.os }}-gems-${{ env.cache-name }}-${{ hashFiles('Gemfile.lock') }}-v1
+      # - name: Cache yarn deps
+      #   uses: actions/cache@v2
+      #   with:
+      #     path: "**/node_modules"
+      #     key: ${{ runner.os }}-yarndeps-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
+      # - name: Install gems
+      #   run: bundle install
+      # - name: Install deps
+      #   run: yarn install
+      # - name: Download artifact
+      #   run: ./scripts/download-expo-artifact
       - name: Upload to Testflight
-        run: bundle e fastlane pilot upload --ipa app.ipa --skip_waiting_for_build_processing
+        run: printenv
+        # run: dotenv bundle e fastlane pilot upload --ipa app.ipa --skip_waiting_for_build_processing
