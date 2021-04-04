@@ -8909,7 +8909,7 @@ nested-error-stacks@^2.0.0, nested-error-stacks@^2.1.0:
   resolved "https://registry.yarnpkg.com/nested-error-stacks/-/nested-error-stacks-2.1.0.tgz#0fbdcf3e13fe4994781280524f8b96b0cdff9c61"
   integrity sha512-AO81vsIO1k1sM4Zrd6Hu7regmJN1NSiAja10gc4bX3F0wd+9rQmcuHQaHVQCYIEC8iFXnE+mavh23GOt7wBgug==
 
-netlify-cli@^3.14.0:
+netlify-cli@3.14.0:
   version "3.14.0"
   resolved "https://registry.yarnpkg.com/netlify-cli/-/netlify-cli-3.14.0.tgz#cab4fb01636c01d6a3b0971b427ab029e7e118f9"
   integrity sha512-n8sk9xuJX//fJCY65qYCFwwP5/miCf6BXkFkDunHjxJ7MH1sOMPMxzlUDY9ycmwo2Abixgub1NzWBJkMqjbHlg==
@@ -9012,7 +9012,7 @@ netlify-cli@^3.14.0:
     wrap-ansi "^6.0.0"
     write-file-atomic "^3.0.0"
 
-netlify-lambda@^2.0.3:
+netlify-lambda@2.0.3:
   version "2.0.3"
   resolved "https://registry.yarnpkg.com/netlify-lambda/-/netlify-lambda-2.0.3.tgz#810253064584ee684efe0f5776d702a51b305507"
   integrity sha512-QiFKYlCookKF0we/ny65ejHfDK5rKSC7jC0KbSVehsS/nh9eRTip2lnJ1ecVwDUbeyAnq20s5YsCK14Tr//DjA==
