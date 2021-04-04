@@ -43,4 +43,4 @@ jobs:
               env:
                   REACT_APP_API_URL: ${{ secrets.API_URL_PRODUCTION }}
                   REACT_APP_RECIPE_API_URL: ${{ secrets.RECIPE_API_URL }}
-              run: yarn build:testflight
+              run: yarn build:ios --release-channel=testflight
