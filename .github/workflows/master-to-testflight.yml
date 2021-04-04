@@ -33,14 +33,8 @@ jobs:
             - name: Install deps
               run: yarn install
             # - name: Test
-              # env:
-                  # REACT_APP_API_URL: ${{ secrets.API_URL_TESTING }}
-                  # REACT_APP_RECIPE_API_URL: ${{ secrets.RECIPE_API_URL }}
               # run: yarn test:ci
             # - name: Lint
               # run: yarn lint
             - name: Build a Testflight app
-              env:
-                  REACT_APP_API_URL: ${{ secrets.API_URL_PRODUCTION }}
-                  REACT_APP_RECIPE_API_URL: ${{ secrets.RECIPE_API_URL }}
               run: yarn build:ios --release-channel=testflight
