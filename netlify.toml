@@ -1,3 +1,2 @@
 [build]
-#   node_bundler = "esbuild"
   functions = "./functions"

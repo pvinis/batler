@@ -14,3 +14,6 @@ web-build/
 .DS_Store
 .env
 .envrc
+
+# Local Netlify folder
+.netlify

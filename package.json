@@ -4,6 +4,7 @@
     "start": "expo start",
     "android": "expo start --android",
     "ios": "expo start --ios",
+    "netlif": "netlify dev",
     "eject": "expo eject"
   },
   "dependencies": {
@@ -18,6 +19,8 @@
     "@types/react": "16.14.5",
     "@types/react-dom": "16.9.12",
     "@types/react-native": "0.63.52",
+    "netlify-cli": "^3.14.0",
+    "netlify-lambda": "^2.0.3",
     "typescript": "4.2.3"
   }
 }
