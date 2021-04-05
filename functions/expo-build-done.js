@@ -4,11 +4,13 @@ const safeCompare = require('safe-compare')
 
 
 exports.handler = async event => {
+	console.log({event})
 	const expoSignature = event.headers['expo-signature']
 	const hmac = crypto.createHmac('sha1', process.env.EXPO_WEBHOOK_SECRET)
 	hmac.update(event.body)
 	const hash = `sha1=${hmac.digest('hex')}`
 
+	console.log({hash, expoSignature})
 	if (!safeCompare(expoSignature, hash)) {
 		return {
 			status: 500,
@@ -16,6 +18,7 @@ exports.handler = async event => {
 		}
 	}
 
+	console.log({event})
 	const {status} = event.body
 	if (status === "finished") {
 		await fetch("https://api.github.com/repos/pvinis/batler/dispatches", {
