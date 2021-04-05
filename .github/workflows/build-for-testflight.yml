@@ -28,5 +28,5 @@ jobs:
           key: ${{ runner.os }}-build-${{ env.cache-name }}-${{ hashFiles('**/yarn.lock') }}-v1
       - name: Install deps
         run: yarn install
-      - name: Build a Testflight app
+      - name: Start Expo build
         run: expo build:ios --release-channel=testflight --no-wait --non-interactive
