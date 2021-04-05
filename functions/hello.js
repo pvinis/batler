@@ -1,3 +1,5 @@
+const fetch = require("node-fetch")
+
 exports.handler = async event => {
 	const subject = event.queryStringParameters.name || 'World'
 	console.log({wow: process.env.WOW})
