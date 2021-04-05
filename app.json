@@ -17,11 +17,11 @@
       "**/*"
     ],
     "ios": {
-       "bundleIdentifier": "is.pvin.batler",
-       "buildNumber": "4",
-       "config":{
-           "usesNonExemptEncryption": false
-       },
+      "bundleIdentifier": "is.pvin.batler",
+      "buildNumber": "5",
+      "config": {
+        "usesNonExemptEncryption": false
+      },
       "supportsTablet": true
     },
     "android": {
