@@ -18,7 +18,7 @@
     ],
     "ios": {
       "bundleIdentifier": "is.pvin.batler",
-      "buildNumber": "5",
+      "buildNumber": "6",
       "config": {
         "usesNonExemptEncryption": false
       },
