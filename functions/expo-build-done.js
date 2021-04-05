@@ -1,5 +1,6 @@
 const fetch = require("node-fetch")
 const crypto = require('crypto')
+const safeCompare = require('safe-compare')
 
 
 exports.handler = async event => {
