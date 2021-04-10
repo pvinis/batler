@@ -18,12 +18,14 @@
     ],
     "ios": {
       "bundleIdentifier": "is.pvin.batler",
-      "buildNumber": "7",
+      "buildNumber": "8",
       "config": {
         "usesNonExemptEncryption": false
       },
       "infoPlist": {
-          "UIBackgroundModes": [ "audio" ]
+        "UIBackgroundModes": [
+          "audio"
+        ]
       },
       "supportsTablet": true
     },
