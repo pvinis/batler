@@ -1,16 +1,18 @@
 import React from 'react';
-import {FlatList, Text} from "react-native"
+import {Button, FlatList, Text} from "react-native"
 import {Screen} from "./DesignSystem"
 
 
 
-export const MainList =()=> (
+export const MainList =({navigation})=> (
 	<Screen>
 	  <FlatList
 	  data={["Alarms", "FB", "Record"]}
 	  keyExtractor={(item)=> item}
 	  renderItem={({item})=>(
-      <Text >WOW {item}</Text>
+		  <Button onPress={()=>{  navigation.navigate("Record") }}
+		  title={`wow ${item}`}
+		  />
 	  )}
 	  />
 	  </Screen>
