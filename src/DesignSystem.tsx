@@ -9,15 +9,15 @@ export const theme = {backgroundColor: "hotpink"}
 type ScreenProps ={
 	noSafe?: boolean
 }
-export const Screen: FC<ScreenProps> = ({noSafe, children})=> {
+export const Screen: FC<ScreenProps> = ({noSafe, children, style})=> {
 	if (noSafe) return (
-	<ScreenInner>
+	<ScreenInner style={style}>
 		{children}
 	</ScreenInner>
 	)
 
 	return (
-		<ScreenInner>
+		<ScreenInner style={style}>
 		<SafeAreaView>
 		{children}
 		</SafeAreaView>

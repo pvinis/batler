@@ -7106,6 +7106,14 @@ expo-asset@~8.2.1:
     path-browserify "^1.0.0"
     url-parse "^1.4.4"
 
+expo-av@~8.7.0:
+  version "8.7.0"
+  resolved "https://registry.yarnpkg.com/expo-av/-/expo-av-8.7.0.tgz#01030256dc75cebd5d02060393ba0ad36c10a7f8"
+  integrity sha512-tYw0z//UZm9THicOsu4w0A7Olq/JauTy7kcBR15Fhyppd9wd8Jtq7QYNtf2igd1R+byS2L0AGwE0nazlbQR+Qw==
+  dependencies:
+    lodash "^4.17.15"
+    nullthrows "^1.1.0"
+
 expo-cli@4.3.5:
   version "4.3.5"
   resolved "https://registry.yarnpkg.com/expo-cli/-/expo-cli-4.3.5.tgz#0bc984a67c61c5000dab3be1ce9d1eff839a28b6"
@@ -7249,6 +7257,18 @@ expo-secure-store@~9.3.0:
   version "9.3.0"
   resolved "https://registry.yarnpkg.com/expo-secure-store/-/expo-secure-store-9.3.0.tgz#b716d5d115cc50a34037d1afef84fe4b8ea0745c"
   integrity sha512-dNhKcoUUn+1kmEfFVxSU7h+YsqODqlExZQJcQgxgeiuCeeDvJWkE10t3jjrO6aNfrdM5i/X2l3oh401EDslWsQ==
+
+expo-sensors@~9.2.0:
+  version "9.2.0"
+  resolved "https://registry.yarnpkg.com/expo-sensors/-/expo-sensors-9.2.0.tgz#4b0c0f85236c874eb99646114e05bb1bd2172058"
+  integrity sha512-HKRFHev1ZclEbeZKdgbTCSpTu8N9WT8Asw3jckno6cCENjV1P7lSrbBx0HCW6q4cO/DcZ0QGvOjQ/LNNE4bCDQ==
+  dependencies:
+    invariant "^2.2.4"
+
+expo-sharing@~8.5.0:
+  version "8.5.0"
+  resolved "https://registry.yarnpkg.com/expo-sharing/-/expo-sharing-8.5.0.tgz#8f54774fc0b2405bf63183c235544b7f978a7765"
+  integrity sha512-k5vz5O1bu9xMpIc3TTQSOwo0g/hvDGOLZzeN9F4dW6GbicC3PTRgFxHOw6vOMS5LXphAxfYcC+9ZtbocVJ7C0g==
 
 expo-sqlite@~8.5.0:
   version "8.5.0"
