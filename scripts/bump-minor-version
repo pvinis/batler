@@ -1,0 +1,23 @@
+#!/usr/bin/env deno run --allow-run --allow-read --allow-write
+
+import { exec, OutputMode } from "https://deno.land/x/exec/mod.ts"
+
+
+const file = "app.json"
+
+// bump
+const contents = JSON.parse(Deno.readTextFileSync(file));
+const currVersion = contents.expo.version.split(".").map(s => parseInt(s, 10))
+const nextVersion = currVersion
+nextVersion[1] = nextVersion[1]+1
+contents.expo.version = nextVersion.join(".")
+
+Deno.writeTextFile(file, JSON.stringify(contents, null, 2) + "\n")
+
+const version = contents.expo.version
+const buildNumber = contents.expo.ios.buildNumber
+
+
+await exec(`git add app.json`)
+await exec(`git commit -m "bump to ${version}"`)
+await exec(`git tag v${version}-${buildNumber}`)
