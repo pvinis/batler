@@ -10,6 +10,11 @@ export const Record =()=> {
 	const [theRecording, setTheRecording]= useState<Audio.Recording|undefined>(undefined)
 	const [theUri, setTheUri]= useState<string|undefined>(undefined)
 	const [showBlack, setShowBlack]=useState(false)
+
+
+/// check if locked is recording
+/// check if bg is recording
+
 	const startRecording = async () => {
 		try{
 		await Audio.requestPermissionsAsync()
