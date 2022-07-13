@@ -1,6 +1,6 @@
-node_modules/**/*
-bundler-vendor/
-.expo/*
+node_modules/
+.expo/
+dist/
 npm-debug.*
 *.jks
 *.p8
@@ -12,8 +12,3 @@ web-build/
 
 # macOS
 .DS_Store
-.env
-.envrc
-
-# Local Netlify folder
-.netlify
