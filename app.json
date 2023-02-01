@@ -7,9 +7,8 @@
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
 		"splash": {
-			"image": "./assets/splash.png",
-			"resizeMode": "contain",
-			"backgroundColor": "#ffffff"
+			"backgroundColor": "#000000",
+			"image": "./assets/splash.png"
 		},
 		"updates": {
 			"fallbackToCacheTimeout": 0
@@ -27,6 +26,11 @@
 			"adaptiveIcon": {
 				"foregroundImage": "./assets/adaptive-icon.png",
 				"backgroundColor": "#FFFFFF"
+			}
+		},
+		"extra": {
+			"eas": {
+				"projectId": "2fa53afd-7208-47df-8a7a-8f5553dc8f83"
 			}
 		}
 	}

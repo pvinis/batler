@@ -3,7 +3,7 @@ import { FlatList, View } from "react-native"
 
 export default () => {
 	return (
-		<View style={{ flex: 1 }}>
+		<View className="flex-1 bg-red-100">
 			<FlatList
 				data={["Alarms", "FB", "Record"]}
 				keyExtractor={(item) => item}
