@@ -16,6 +16,7 @@
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
 			"bundleIdentifier": "is.pvin.batler",
+			"buildNumber": "9",
 			"supportsTablet": true,
 			"infoPlist": {
 				"UIBackgroundModes": ["audio"]
