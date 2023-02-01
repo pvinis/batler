@@ -1,0 +1,7 @@
+[*.json]
+indent_style = tab
+
+[package.json]
+indent_style = space
+[package-lock.json]
+indent_style = space
