@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "batler",
 		"slug": "batler",
-		"version": "0.6.0",
+		"version": "0.7.0",
 		"scheme": "batler",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
@@ -16,7 +16,7 @@
 		"assetBundlePatterns": ["**/*"],
 		"ios": {
 			"bundleIdentifier": "is.pvin.batler",
-			"buildNumber": "9",
+			"buildNumber": "16",
 			"supportsTablet": true,
 			"infoPlist": {
 				"UIBackgroundModes": ["audio"]
