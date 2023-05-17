@@ -1,13 +1,12 @@
 {
   "name": "batler",
   "version": "1.0.0",
-  "main": "index.js",
   "scripts": {
     "start": "expo start --dev-client",
     "android": "expo run:android",
     "ios": "expo run:ios",
     "eas": "pnpx eas-cli@3.13.0",
-    "build": "pnpm eas build --platform all"
+    "build": "pnpm eas build --platform ios"
   },
   "dependencies": {
     "expo": "~48.0.17",
