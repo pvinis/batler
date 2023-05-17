@@ -1,8 +1,8 @@
 # batler
 
-- npx start
-- npx expo prebuild --clean
-- npx run ios
-- npx eas login
-- npx eas build
-- npx eas submit -p ios
+- pnpx start
+- pnpx expo prebuild --clean
+- pnpx run ios
+- pnpx eas login
+- pnpx eas build
+- pnpx eas submit -p ios

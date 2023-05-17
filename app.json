@@ -2,7 +2,7 @@
 	"expo": {
 		"name": "batler",
 		"slug": "batler",
-		"version": "0.7.0",
+		"version": "0.8.0",
 		"scheme": "batler",
 		"orientation": "portrait",
 		"icon": "./assets/icon.png",
