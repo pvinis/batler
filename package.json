@@ -6,7 +6,8 @@
     "android": "expo run:android",
     "ios": "expo run:ios",
     "eas": "pnpx eas-cli@3.13.0",
-    "build": "pnpm eas build --platform ios"
+    "build:ios": "pnpm eas build --platform ios",
+    "devclient:ios": "pnpm eas build:run -p ios"
   },
   "dependencies": {
     "expo": "~48.0.17",
