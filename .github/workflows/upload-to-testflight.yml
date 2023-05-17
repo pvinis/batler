@@ -24,12 +24,12 @@ jobs:
           expo-password: ${{ secrets.EXPO_CLI_PASSWORD }}
           expo-cache: true
       - name: Cache gems
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: "bundler-vendor"
           key: ${{ runner.os }}-gems-${{ hashFiles('Gemfile.lock') }}-v1
       - name: Cache yarn deps
-        uses: actions/cache@v2
+        uses: actions/cache@v3
         with:
           path: "**/node_modules"
           key: ${{ runner.os }}-yarndeps-${{ hashFiles('**/yarn.lock') }}-v1
